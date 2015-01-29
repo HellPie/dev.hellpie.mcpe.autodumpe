@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="match_parent"
+	android:layout_width="match_parent"
+	android:orientation="vertical">
+
+	<TableLayout
+		android:layout_height="match_parent"
+		android:layout_width="match_parent">
+
+		<View
+			android:layout_height="1dp"
+			android:background="?android:attr/dividerVertical"
+			android:layout_width="match_parent"
+			android:layout_marginBottom="15dp"/>
+
+		<TextView
+			android:layout_height="wrap_content"
+			android:text="Dump Options"
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:layout_width="wrap_content"
+			android:layout_marginLeft="10dp"/>
+
+		<CheckBox
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:text="Dump Assembly Code"
+			android:id="@+id/DumpAssemblyCB"/>
+
+		<CheckBox
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:text="Dump Function Names and Arguments"
+			android:id="@+id/DumpFunctionsCB"/>
+
+		<CheckBox
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:text="Dump Symbols"
+			android:id="@+id/DumpSymbolsCB"/>
+
+		<View
+			android:layout_height="1dp"
+			android:background="?android:attr/dividerVertical"
+			android:layout_width="match_parent"
+			android:layout_marginBottom="15dp"/>
+
+		<TextView
+			android:layout_height="wrap_content"
+			android:text="Objdump Binary Options"
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:layout_width="wrap_content"
+			android:layout_marginLeft="10dp"/>
+
+		<RadioButton
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:text="Use integrated objdump binary"
+			android:id="@+id/UseInternalBinaryRB"/>
+
+		<RadioButton
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:text="Use AIDE's objdump binary"
+			android:id="@+id/UseAIDEBinaryRB"/>
+
+		<View
+			android:layout_height="1dp"
+			android:background="?android:attr/dividerVertical"
+			android:layout_width="match_parent"
+			android:layout_marginBottom="25dp"/>
+
+		<Button
+			android:layout_height="wrap_content"
+			android:text="DUMP it right in da p***y"
+			android:layout_width="match_parent"
+			android:id="@+id/DumpButton"
+			android:layout_marginLeft="10dp"
+			android:layout_marginRight="10dp"/>
+
+	</TableLayout>
+
+</LinearLayout>
+
