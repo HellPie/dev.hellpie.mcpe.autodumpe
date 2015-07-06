@@ -685,7 +685,7 @@ public class MainActivity extends Activity implements OnClickListener {
 					}
 
 					// Tell the process to run a command
-					odProcess = Runtime.getRuntime().exec(getFilesDir().toString() + "/objdump -d " + getFilesDir().toString() + "/" + appLibName);
+					odProcess = Runtime.getRuntime().exec(getFilesDir().toString() + "/objdump -dRC " + getFilesDir().toString() + "/" + appLibName);
 
 					// Create an input and an output stream
 					InputStream odIS = odProcess.getInputStream();
